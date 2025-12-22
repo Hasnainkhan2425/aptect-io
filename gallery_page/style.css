@@ -1,0 +1,197 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background: radial-gradient(circle at top, #0b1220, #020617);
+    color: #e5e7eb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+        /* brand logo css */
+.log{
+    font-size: 1.2rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-decoration: none;
+    padding: 1.2rem;
+    background: linear-gradient(90deg, rgb(0, 140, 255), rgb(255, 204, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+
+ /* NAVBAR BASE=================================*/
+.navbar {
+     background-color: #0b1220;
+     padding: 12px 0;
+ }
+
+ .navbar-brand {
+     font-weight: 600;
+     color: #ffffff;
+ }
+
+ .navbar-brand span {
+     color: #4da3ff;
+ }
+
+ /* ================================
+   NAVIGATION TABS (DARK MODE)
+================================= */
+.nav-link{
+    font-family: "Roboto", sans-serif;
+    margin: 0px 16px;
+}
+.navbar-nav .nav-link {
+     position: relative;
+     padding: 8px 16px;
+     border-radius: 16px;
+     transition: all 0.25s ease;
+     color: #bfc7d5 !important;
+ }
+
+ /* Hover effect */
+ .navbar-nav .nav-link:hover {
+     background-color: rgba(59, 130, 246, 0.15);
+     color: #e5e7eb !important;
+ }
+
+ /* Active tab */
+ .navbar-nav .nav-link.active {
+     background: linear-gradient(90deg,
+             rgb(0, 140, 255),
+             rgb(255, 204, 0));
+     color: #0b1220 !important;
+     font-weight: 600;
+ }
+
+ /* Remove default Bootstrap focus outline */
+ .navbar-nav .nav-link:focus {
+     box-shadow: none;
+ }
+
+ /* ================================
+           DARK MODE SEARCH INPUT
+        ================================= */
+ .search-box {
+     background-color: #0f172a;
+     border: 1px solid #24304a;
+     color: #e5e7eb;
+     height: 42px;
+ }
+
+ .search-box::placeholder {
+     color: #9aa4b2;
+ }
+
+ .search-box:focus {
+     background-color: #0f172a;
+     border-color: #3b82f6;
+     box-shadow: 0 0 0 0.15rem rgba(59, 130, 246, 0.35);
+     color: #ffffff;
+ }
+
+ .search-box:hover {
+     border-color: #334155;
+ }
+
+ /* Remove Chrome autofill white bg */
+ .search-box:-webkit-autofill,
+ .search-box:-webkit-autofill:hover,
+ .search-box:-webkit-autofill:focus {
+     -webkit-text-fill-color: #e5e7eb;
+     -webkit-box-shadow: 0 0 0 1000px #0f172a inset;
+     transition: background-color 5000s ease-in-out 0s;
+ }
+
+ /* ================================
+           Search BUTTON
+        ================================= */
+ .btn-signin {
+     background-color: #2f80ed;
+     border: none;
+     font-weight: 500;
+     height: 42px;
+ }
+
+ .btn-signin:hover {
+     background-color: #1c6ed5;
+ }
+
+ /* ================================
+           DARK MODE TOGGLER
+        ================================= */
+ .navbar-toggler {
+     border: 1px solid #24304a;
+     padding: 6px 10px;
+     border-radius: 8px;
+ }
+
+ .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(229,231,235,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+ }
+
+ .navbar-toggler:hover {
+     border-color: #3b82f6;
+ }
+
+ .navbar-toggler:focus {
+     box-shadow: 0 0 0 0.15rem rgba(59, 130, 246, 0.4);
+ }
+ 
+    /* ================================
+            Gallery Page Styles
+            ================================= */
+.subtitle {
+    color: #b3c1d1;
+    max-width: 700px;
+}
+
+.filter-btn {
+    background-color: #121b2f;
+    color: #b3c1d1;
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.monument-card {
+    background-color: #121b2f;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.monument-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.monument-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.pagination .page-link {
+    background-color: #121b2f;
+    border: none;
+    color: #b3c1d1;
+}
+
+.pagination .active .page-link {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+footer {
+    color: #8a9bb5;
+    font-size: 0.9rem;
+}
